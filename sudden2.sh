@@ -2,6 +2,7 @@
 FILE=~/tmp/_SUDDEN # 변수
 
 figlet HYUNDAI
+DATE= echo $(date +"%Y%m%d %H:%M:%S")
 
 while true
 do
@@ -10,7 +11,7 @@ do
 
         else
 		clear
-		date
+		echo DATE
         fi
         sleep 3
 done
