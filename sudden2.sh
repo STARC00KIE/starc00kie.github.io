@@ -1,5 +1,8 @@
 #!/bin/bash
 FILE=~/tmp/_SUDDEN # 변수
+
+figlet HYUNDAI
+
 while true
 do
 	if [ -f "$FILE" ]; then
