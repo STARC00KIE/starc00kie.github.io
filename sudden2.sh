@@ -1,17 +1,19 @@
 #!/bin/bash
 FILE=~/tmp/_SUDDEN # 변수
 
-figlet HYUNDAI
-DATE= echo $(date +"%Y%m%d %H:%M:%S")
+# figlet HYUNDAI
 
 while true
 do
 	if [ -f "$FILE" ]; then
-		echo "SUDDEN!!"
+		DATE=$(date +"%Y%m%d %H:%M:%S")
+		echo $DATE", SUDDEN!"
 
         else
 		clear
-		echo DATE
+                figlet HYUNDAI
+		DATE=$(date +"%Y%m%d %H:%M:%S")
+		echo $DATE
         fi
         sleep 3
 done
